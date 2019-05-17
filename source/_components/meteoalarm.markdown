@@ -88,7 +88,7 @@ There are a few awareness levels:
 
 Below you find an example of an automation.
 
-{% raw %}
+```yaml
 automation:
   - alias: Alert me about weather warnings
     trigger:
@@ -100,7 +100,7 @@ automation:
         data_template:
           title: '{{state_attr('binary_sensor.meteoalarm', 'headline')}}'
           message: "{{state_attr('binary_sensor.meteoalarm', 'description')}} is effective on {{state_attr('binary_sensor.meteoalarm', 'effective')}}"
-{% endraw %}
+```
 
 <p class='note warning'>
 This component is not affiliated with MeteoAlarm and retrieves data from the website by using the XML feeds. Use it at your own risk.
